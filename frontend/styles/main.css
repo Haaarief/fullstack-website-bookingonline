@@ -126,4 +126,37 @@ header .btn-get-started:hover {
 .section-popular-content .section-popular-travel .travel-button .btn-travel-details:hover {
   background-color: #F5A466;
   color: white;
+}
+
+.section-networks {
+  background-color: #fff;
+  margin-top: -200px;
+  padding-top: 240px;
+  padding-bottom: 50px;
+}
+.section-networks h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: Bold;
+  font-size: 40px;
+}
+.section-networks p {
+  font-size: 18px;
+}
+.section-networks img {
+  max-width: 100%;
+}
+
+.section-testimonial-heading {
+  background: linear-gradient(#fff 0%, #f7f9ff 100%);
+  padding-top: 50px;
+  min-height: 506px;
+}
+.section-testimonial-heading h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+.section-testimonial-heading p {
+  font-size: 18px;
 }/*# sourceMappingURL=main.css.map */
