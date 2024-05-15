@@ -206,4 +206,8 @@ header .btn-get-started:hover {
 .section-testimonial-content .btn-get-started:hover {
   background-color: #F5A466;
   color: white;
+}
+
+.section-footer a {
+  color: #071c4d;
 }/*# sourceMappingURL=main.css.map */
