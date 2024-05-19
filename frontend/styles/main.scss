@@ -1,7 +1,7 @@
 body{
-    background-color: #fff;
+    background-color: #ffffff;
     font-family: "Assistant", sans-serif;
-    color: #071c4d
+    color: #071c4d;
 }
 
 
@@ -18,7 +18,7 @@ body{
         }
         &.active{
             font-weight: bold;
-            color: #071c4d !important;
+            color: #071c4d;
         }
     }
 }
@@ -40,6 +40,7 @@ body{
         color: #ffff;
     }
 }
+
 
 // header
 header{
@@ -266,3 +267,74 @@ header{
     }
 
 }
+
+// details page
+
+.section-details-header{
+    background-color: #E4E6EB !important;
+    min-height: 310px;
+    margin-top: -70px
+}
+
+.section-details-content{
+    margin-top: -210px;
+    min-height: 100vh;
+
+    .breadcrumb{
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .breadcrumb-item{
+        &.active{
+            font-weight: bold;
+            color:#071c4d;
+        }
+    }
+}
+
+.card-details{
+    padding: 30px;
+    border-radius: 11px;
+
+    h1{
+        font-size: 26px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 18px;
+        color: #b1b1b1;
+    }
+}
+
+.features{
+    margin-top: 20px;
+
+    h3{
+        font-size: 18px;
+        color: #071c4d;
+        margin-bottom: 0;
+    }
+
+    p{
+        margin-bottom:0
+    }
+
+    .description{
+        margin-left: 10px;
+        overflow: hidden;
+        float: left;
+    }
+
+    .features-images{
+        width: 45px;
+        height: 45px;
+        float: left;
+        
+    }
+
+}
+
