@@ -337,4 +337,20 @@ header{
     }
 
 }
+.gallery {
+    .xzoom-container {
+    display: block;
+
+    .xzoom {
+        width: 100%;
+        box-shadow: none;
+        margin-bottom: 10px;
+    }
+
+    .xactive {
+        border: 2px solid #1abc9c;
+        box-shadow: none;
+    }
+    }
+}
 

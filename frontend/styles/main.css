@@ -267,4 +267,17 @@ header .btn-get-started:hover {
   width: 45px;
   height: 45px;
   float: left;
+}
+
+.gallery .xzoom-container {
+  display: block;
+}
+.gallery .xzoom-container .xzoom {
+  width: 100%;
+  box-shadow: none;
+  margin-bottom: 10px;
+}
+.gallery .xzoom-container .xactive {
+  border: 2px solid #1abc9c;
+  box-shadow: none;
 }/*# sourceMappingURL=main.css.map */

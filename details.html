@@ -7,9 +7,10 @@
     <title>Nomads</title>
     <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="frontend/styles/main.css">
+    <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css">
 </head>
 <body>
 
@@ -93,14 +94,39 @@
                                 Republic of Indonesia Raya
                             </p>
                             <div class="gallery">
-
+                                <div class="xzoom-container">
+                                    <img src="frontend/images/details.jpg" class="xzoom"
+                                    id="xzoom-default" xoriginal="frontend/images/details.jpg>"
+                                </div>
+                                <div class="xzoom-thumbs">
+                                    <a href="frontend/images/details.jpg">
+                                        <img src="frontend/images/details.jpg" class="xzoom-gallery"
+                                        width="128" xpreview="frontend/images/details.jpg">
+                                    </a>
+                                    <a href="frontend/images/details.jpg">
+                                        <img src="frontend/images/details.jpg" class="xzoom-gallery"
+                                        width="128" xpreview="frontend/images/details.jpg">
+                                    </a>
+                                    <a href="frontend/images/details.jpg">
+                                        <img src="frontend/images/details.jpg" class="xzoom-gallery"
+                                        width="128" xpreview="frontend/images/details.jpg">
+                                    </a>
+                                    <a href="frontend/images/details.jpg">
+                                        <img src="frontend/images/details.jpg" class="xzoom-gallery"
+                                        width="128" xpreview="frontend/images/details.jpg">
+                                    </a>
+                                    <a href="frontend/images/details.jpg">
+                                        <img src="frontend/images/details.jpg" class="xzoom-gallery"
+                                        width="128" xpreview="frontend/images/details.jpg">
+                                    </a>
+                                </div>
                             </div>
                             <h2>Tentang Wisata</h2>
                             <p>
                             Nusa Penida is an island southeast of Indonesia’s island Bali and a district of Klungkung 
-Regency that includes the neighbouring small island of Nusa Lembongan. The Badung 
-Strait separates the island and Bali. The interior of Nusa Penida is hilly with a maximum 
-altitude of 524 metres. It is drier than the nearby island of Bali.
+                            Regency that includes the neighbouring small island of Nusa Lembongan. The Badung 
+                            Strait separates the island and Bali. The interior of Nusa Penida is hilly with a maximum 
+                            altitude of 524 metres. It is drier than the nearby island of Bali.
                             </p>
                             <p>Bali and a district of Klungkung Regency that includes the neighbouring small island of 
                             Nusa Lembongan. The Badung Strait separates the island and Bali.
@@ -127,7 +153,6 @@ altitude of 524 metres. It is drier than the nearby island of Bali.
                                         <p>Local Foods</p>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -204,6 +229,17 @@ altitude of 524 metres. It is drier than the nearby island of Bali.
     <!-- Javascript -->
     <script src="frontend/libraries/jquery/jquery-3.7.1.min.js"></script>
     <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.xzoom, .xzoom-gallery').xzoom({
+                zoomWidth: 500,
+                title: false,
+                tint: '#333',
+                Xoffset: 15
+            });
+        });
+    </script>
 </body>
 
 </html>
