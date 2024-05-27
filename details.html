@@ -16,20 +16,54 @@
 
     <!-- Navbar -->
     <div class="container">
-            <nav class="row navbar navbar-expand-lg navbar-light bg-white">
-              <div class="navbar-nav ml-auto mr-auto mr-sm-auto mr-lg-0 mr-md-auto">
-                <a href="index.html" class="navbar-brand">
-                    <img src="frontend/images/logo.png" alt="">
-                </a>
-              </div>  
-              <ul class="navbar-nav mr-auto d-none d-lg-block">
-                <li>
-                    <span class="text-muted">
-                        | &nbsp; Beyond the explorer of the world 
-                    </span>
-                </li>
-              </ul>
-            </nav>
+        <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+            <a href="#" class="navbar-brand">
+                <img src="frontend/images/logo.png" alt="Logo NOMADS">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+            <span class="navbar-toggler-icon"></span>  
+            </button>
+            <div class="collapse navbar-collapse" id="navb">
+                <ul class="navbar-nav ml-auto mr-3 ">
+                    <li class="nav-item mx-md-2">
+                        <a href="#" class="nav-link active mt-1">Home</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a href="#" class="nav-link mt-1">Paket Travel</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mt-1" href="#"
+                        id="navbardrop" data-toggle="dropdown">Service
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link</a>
+                            <a class="dropdown-item" href="#">Link</a>
+                            <a class="dropdown-item" href="#">Link</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a href="#" class="nav-link mt-1">Testimonial</a>
+                    </li>
+
+
+                    <!-- Mobile Buutton -->
+                    <form class="form-inline d-sm-block d-md-none">
+                        <button class="btn-login border-0 border-light my-2 my-sm-0 px-4">
+                            Masuk
+                        </button>
+                    </form>
+                    
+
+                    <!-- Desktop Button -->
+                    
+                    <form class="form-inline my-2 y-lg-0 d-none d-md-block">
+                        <button class="btn-login btn-navbar-right border-0 border-light my-2 my-sm-0 px-4">
+                            Masuk
+                        </button>
+                    </form>
+                </ul>
+            </div>
+        </nav>
     </div>
     <!-- Navbar -->
 
@@ -45,11 +79,8 @@
                             <li class="breadcrumb-item">
                                 Paket Travel
                             </li>
-                            <li class="breadcrumb-item">
-                                Details
-                            </li>
                             <li class="breadcrumb-item active">
-                                Checkout
+                                Details
                             </li>
                         </ol>
                     </nav>
