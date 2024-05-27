@@ -247,6 +247,12 @@ header .btn-get-started:hover {
   color: #b1b1b1;
 }
 
+.card-right {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 0;
+}
+
 .features {
   margin-top: 20px;
 }
@@ -280,4 +286,22 @@ header .btn-get-started:hover {
 .gallery .xzoom-container .xactive {
   border: 2px solid #1abc9c;
   box-shadow: none;
+}
+
+.members .member-image {
+  width: 40px;
+  height: 40px;
+}
+
+.join-container {
+  margin-top: -16px;
+}
+.join-container .btn-join-now {
+  background-color: #FF9E53;
+  color: white;
+  border-radius: 0;
+}
+.join-container .btn-join-now:hover {
+  background-color: #F5A466;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
