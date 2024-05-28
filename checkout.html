@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="frontend/styles/main.css">
     <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css">
+    <link rel="stylesheet" href="frontend/libraries/gijgo/css/gijgo.min.css">
 </head>
 <body>
 
@@ -58,72 +59,94 @@
                 <div class="row">
                     <div class="col-lg-8 pl-lg-0">
                         <div class="card card-details">
-                            <h1>Nusa Peninda</h1>
+                            <h1>Who is Going?</h1>
                             <p>
-                                Republic of Indonesia Raya
+                                Trip to Ubud, Bali, Indonesia.
                             </p>
-                            <div class="gallery">
-                                <div class="xzoom-container">
-                                    <img src="frontend/images/details.jpg" class="xzoom"
-                                    id="xzoom-default" xoriginal="frontend/images/details.jpg>"
-                                </div>
-                                <div class="xzoom-thumbs">
-                                    <a href="frontend/images/details.jpg">
-                                        <img src="frontend/images/details.jpg" class="xzoom-gallery"
-                                        width="128" xpreview="frontend/images/details.jpg">
-                                    </a>
-                                    <a href="frontend/images/details.jpg">
-                                        <img src="frontend/images/details.jpg" class="xzoom-gallery"
-                                        width="128" xpreview="frontend/images/details.jpg">
-                                    </a>
-                                    <a href="frontend/images/details.jpg">
-                                        <img src="frontend/images/details.jpg" class="xzoom-gallery"
-                                        width="128" xpreview="frontend/images/details.jpg">
-                                    </a>
-                                    <a href="frontend/images/details.jpg">
-                                        <img src="frontend/images/details.jpg" class="xzoom-gallery"
-                                        width="128" xpreview="frontend/images/details.jpg">
-                                    </a>
-                                    <a href="frontend/images/details.jpg">
-                                        <img src="frontend/images/details.jpg" class="xzoom-gallery"
-                                        width="128" xpreview="frontend/images/details.jpg">
-                                    </a>
-                                </div>
+                            <div class="attendee">
+                                <table class="table table-responsive-sm text-center">
+                                    <thead>
+                                        <tr>
+                                            <td>Picture</td>
+                                            <td>Name</td>
+                                            <td>Nationality</td>
+                                            <td>Visa</td>
+                                            <td>Passport</td>
+                                            <td></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <img src="/frontend/images/avatar1.png" height="60px">
+                                            </td>
+                                            <td class="align-middle">
+                                                Maliq D Essentials
+                                            </td>
+                                            <td class="align-middle">
+                                                RUS
+                                            </td>
+                                            <td class="align-middle">
+                                                N/A
+                                            </td>
+                                            <td class="align-middle">
+                                                Active
+                                            </td>
+                                            <td class="align-middle">
+                                                <img src="/frontend/images/ic-remove.png" >
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <img src="/frontend/images/avatar2.png" height="60px">
+                                            </td>
+                                            <td class="align-middle">
+                                                Alex Puriram
+                                            </td>
+                                            <td class="align-middle">
+                                                THA
+                                            </td>
+                                            <td class="align-middle">
+                                                30 Days
+                                            </td>
+                                            <td class="align-middle">
+                                                Active
+                                            </td>
+                                            <td class="align-middle">
+                                                <img src="/frontend/images/ic-remove.png" >
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <h2>Tentang Wisata</h2>
-                            <p>
-                            Nusa Penida is an island southeast of Indonesia’s island Bali and a district of Klungkung 
-                            Regency that includes the neighbouring small island of Nusa Lembongan. The Badung 
-                            Strait separates the island and Bali. The interior of Nusa Penida is hilly with a maximum 
-                            altitude of 524 metres. It is drier than the nearby island of Bali.
-                            </p>
-                            <p>Bali and a district of Klungkung Regency that includes the neighbouring small island of 
-                            Nusa Lembongan. The Badung Strait separates the island and Bali.
-                            </p>
-                            <div class="features row">
-                                <div class="col-md-4">
-                                    <img src="frontend/images/ic_event.png" alt="" class="features-images">
-                                    <div class="description">
-                                        <h3>Featured Event</h3>
-                                        <p>Tari Kecak</p>
+                            <div class="member mt-3">
+                                <h2>Add Member</h2>
+                                <form class="form-inline">
+                                    <label for="inputUsername" class="sr-only">Name</label>
+                                    <input 
+                                        type="text"name="inputUsername" class="form-control mb-2 mr-sm-2"
+                                        id="inputUsername" placeholder="Username"/>
+                                    <label for="inputVisa" class="sr-only">Visa</label>
+                                    <select name="inputVisa" id="InputVisa" class="costum-select mb-2 mr-sm-2">
+                                        <option value="Visa" selected>VISA</option>
+                                        <option value="N/A">N/A</option>
+                                        <option value="30 Days">30 Days</option>
+                                    </select>
+                                    
+                                    <label for="doePassport" class="sr-only">DOE Passport</label>
+                                    <div class="input-group mb-2 mr-sm-2">
+                                        <input type="text" class="form-control datepicker" id="doePassport" placeholder="DOE Passport">
                                     </div>
-                                </div>
-                                <div class="col-md-4 border-left">
-                                    <img src="frontend/images/ic_bahasa.png" alt="" class="features-images">
-                                    <div class="description">
-                                        <h3>Language</h3>
-                                        <p>Bahasa Indonesia</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 border-left">
-                                    <img src="frontend/images/ic_foods.png" alt="" class="features-images">
-                                    <div class="description">
-                                        <h3>Foods</h3>
-                                        <p>Local Foods</p>
-                                    </div>
-                                </div>
+
+                                    <button type="submit" class="btn btn-add-now mb-2 px-4">Add Now</button>
+                                </form>
+                                <h3 class="mt-2 mb-0">Note</h3>
+                                <p class="disclaimer mb-0">
+                                    You are only able to invite member that has registered in Nomads
+                                </p>
                             </div>
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -138,7 +161,7 @@
                         </div>
                         <hr>
                         <h2>Trip Informations</h2>
-                        <table class="trip-information">
+                        <table class="trip-informations">
                             <tr>
                                 <th width="50%">Date of Departure</th>
                                 <td width="50%" class="text-right">22 Aug, 2019</td>
@@ -234,6 +257,7 @@
     <script src="frontend/libraries/jquery/jquery-3.7.1.min.js"></script>
     <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
     <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+    <script src="frontend/libraries/gijgo/js/gijgo.min.js"></script>
     <script>
         $(document).ready(function(){
             $('.xzoom, .xzoom-gallery').xzoom({
@@ -242,6 +266,13 @@
                 tint: '#333',
                 Xoffset: 15
             });
+
+            $('.datepicker').datepicker({
+                uiLibrary: 'bootstrap4',
+                icons: {
+                    rightIcon: '<img src="frontend/images/ic_doe.png" />'
+                }
+            })
         });
     </script>
 </body>
